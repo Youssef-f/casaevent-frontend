@@ -41,9 +41,9 @@ export default function EventDetail() {
 
       {/* Hero Section */}
       <section className="relative w-full flex flex-col md:flex-row items-end bg-white shadow-md">
-        <div className="relative w-full md:w-2/3 h-[260px] md:h-[340px]">
+        <div className="relative w-full md:w-2/3 h-[340px] md:h-[340px]">
           <Image
-            src="/images/artist-rema.jpg"
+            src="/images/Rema-panorama.png"
             alt="Rema"
             fill
             className="object-cover w-full h-full"
@@ -51,7 +51,7 @@ export default function EventDetail() {
         </div>
         <div className="absolute left-8 bottom-0 z-10 hidden md:block">
           <Image
-            src="/images/rema-poster.png"
+            src="/images/rema.jpg"
             alt="Rema Poster"
             width={200}
             height={200}
@@ -68,27 +68,27 @@ export default function EventDetail() {
       {/* Description & Tickets */}
       <section className="max-w-7xl mx-auto px-4 py-8 flex flex-col md:flex-row gap-8">
         <div className="flex-1">
-          <h2 className="text-xl font-bold mb-2">Description</h2>
-          <p className="mb-2 font-semibold">
+          <h2 className="text-xl font-bold mb-20">Description</h2>
+          <p className="mb-14 font-semibold">
             Événement exceptionnel à Casablanca !
           </p>
-          <p className="mb-2">
+          <p className="mb-6">
             Pour la première fois au Maroc, le superstar nigérian Rema. Frissons
             et fête au Morocco Mall, profitez d'activités exclusives dans le
             cadre de son incroyable tournée mondiale !
           </p>
-          <p className="mb-2">
+          <p className="mb-6">
             Rendu en 2020 avec le tube planétaire "Dumebi", Rema a conquis des
             millions de fans à travers le monde. Son style unique, mélange
             d'afrobeats, de pop et de trap, fait de chaque concert un événement
             inoubliable. Ne manquez pas cette occasion de vivre une soirée
             exceptionnelle à Casablanca !
           </p>
-          <p className="mb-2">
+          <p className="mb-6">
             Rendez-vous le 13 juin 2025 au Morocco Mall. Des cadeaux pour les
             premiers inscrits, surprises et rencontres exclusives !
           </p>
-          <p className="mb-2">Places limitées – Réservez vite vos billets !</p>
+          <p className="mb-6">Places limitées – Réservez vite vos billets !</p>
         </div>
         <div className="flex-1 flex flex-col gap-4">
           {/* Ticket Cards */}
@@ -96,26 +96,26 @@ export default function EventDetail() {
             {
               title: "Standard Pass",
               price: 400,
-              desc: "@ Morocco Mall",
+              desc: "Morocco Mall",
               date: "13 juin 2025 à 21:00",
               details: "Ouverture des portes 19:00",
-              img: "/images/rema-poster.png",
+              img: "/images/rema.jpg",
             },
             {
               title: "Golden Access",
               price: 800,
-              desc: "@ Morocco Mall",
+              desc: "Morocco Mall",
               date: "13 juin 2025 à 21:00",
               details: "Ouverture des portes 19:00",
-              img: "/images/rema-poster.png",
+              img: "/images/rema.jpg",
             },
             {
               title: "VIP Experience",
               price: 1800,
-              desc: "@ Morocco Mall",
+              desc: "Morocco Mall",
               date: "13 juin 2025 à 21:00",
               details: "Ouverture des portes 19:00",
-              img: "/images/rema-poster.png",
+              img: "/images/rema.jpg",
             },
           ].map((ticket, i) => (
             <div
@@ -125,9 +125,9 @@ export default function EventDetail() {
               <Image
                 src={ticket.img}
                 alt={ticket.title}
-                width={80}
-                height={80}
-                className="rounded object-cover w-[80px] h-[80px]"
+                width={100}
+                height={100}
+                className="rounded object-cover w-[170px] h-[170px]"
               />
               <div className="flex-1">
                 <div className="font-bold">{ticket.title}</div>
@@ -162,10 +162,10 @@ export default function EventDetail() {
         <div className="flex flex-col md:flex-row gap-8 items-center justify-center">
           <div className="flex-1 flex justify-center">
             <Image
-              src="/images/venue-plan.png"
+              src="/images/carte-rema-salle.jpg"
               alt="Plan de salle"
-              width={350}
-              height={220}
+              width={800}
+              height={400}
               className="rounded-lg object-contain bg-white"
             />
           </div>
@@ -216,16 +216,16 @@ export default function EventDetail() {
               <li>
                 <span className="font-bold">Huda Nacer</span> il y a 2 heures
                 <br />
-                <span>Génial sur Latin pop...</span>
+                <span>Pour la 1ère fois au Maroc, Trop cool !</span>
               </li>
             </ul>
           </div>
           {/* YouTube Video */}
           <div className="flex-1 bg-white rounded-lg shadow p-4 flex items-center justify-center">
             <iframe
-              width="100%"
-              height="220"
-              src="https://www.youtube.com/embed/3K2yQKX3y2A"
+              width="600"
+              height="400"
+              src="/videos/Rema-Calm-Down-Video.mp4"
               title="REMA - Calm Down"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
