@@ -40,7 +40,7 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative w-full h-[320px] md:h-[400px] flex items-center justify-center">
         <Image
-          src="/images/casablanca-hero.jpg"
+          src="/images/mosquee-hassan-2.jpg"
           alt="Casablanca"
           fill
           className="object-cover w-full h-full absolute top-0 left-0 z-0"
@@ -100,14 +100,17 @@ export default function Home() {
               className="bg-white rounded-lg shadow p-2 flex flex-col items-center"
             >
               <Image
-                src="/images/sample-event.jpg"
+                src="/images/gims.jpg"
                 alt="event"
                 width={160}
                 height={120}
                 className="rounded mb-2 object-cover w-full h-[120px]"
               />
               <div className="font-bold text-center">
-                Nom de l'événement {i}
+                Concert Maitre Gims {i}
+                La Casablancaise
+                Parc de la Ligue Arabe
+                21 Juin 2025 à 14:00
               </div>
               <div className="text-xs text-gray-500 mb-1">Catégorie</div>
               <div className="text-[#FF5A1F] font-bold">350 MAD</div>
