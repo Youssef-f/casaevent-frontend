@@ -506,10 +506,12 @@ export default function Home() {
                   </span>
                 </div>
 
-                {/* Buy Button */}
-                <button className="w-full bg-[#FF5A1F] text-white py-2 rounded text-sm font-bold hover:bg-red-600 transition-colors">
-                  Acheter maintenant
-                </button>
+               <Link
+                    href="/event/rema2025"
+                    className="w-full block bg-[#FF5A1F] text-white py-2 rounded text-sm font-bold hover:bg-red-600 transition-colors text-center"
+                  >
+                    Acheter maintenant
+                </Link>
               </div>
             </div>
           ))}
@@ -611,10 +613,13 @@ export default function Home() {
                         <span className="font-bold text-gray-900">{event.price}</span>
                         <span className="text-gray-500 text-sm ml-1">{event.pricePerPerson}</span>
                       </div>
-                      <button className="bg-[#FF5A1F] hover:bg-red-600 text-white px-6 py-2 rounded-lg text-sm font-bold transition-colors flex items-center gap-2 shadow-md hover:shadow-lg">
+                    <Link
+                        href="/event/rema2025"
+                        className="bg-[#FF5A1F] hover:bg-red-600 text-white px-6 py-2 rounded-lg text-sm font-bold transition-colors flex items-center gap-2 shadow-md hover:shadow-lg"
+                      >
                         <Ticket size={16} />
                         Acheter
-                      </button>
+                    </Link>
                     </div>
                   </div>
                 </div>
@@ -659,6 +664,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+
 
     </main>
   );
